@@ -59,35 +59,40 @@ html, body {
     transition: background .5s; 
   }
   
-  .nav { 
-    background: #000;
-    height: 80px; 
-    width: 100%;
+  .nav {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
   }
   
   .nav ul {
-    height: 80px;
     list-style: none;
-    margin: 0 auto; 
+    margin: 0;
     padding: 0;
+    display: flex;
   }
   
   .nav ul li {
-    color: #fff;
-    display: inline-block; 
-    height: 80px;
-    line-height: 80px; 
-    list-style: none;
-    padding: 0 10px;
-    transition: background .5s; 
+    margin: 20px 0 ;
   }
   
-  .btn:hover, .nav ul li:hover {
-    background:  #ff4800;
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+ .nav ul li a:hover {
+    color: orangered;
     cursor: pointer; 
     transition: background .5s;  
   }
-  
+  .btn:hover {
+    background: orangered;
+    cursor: pointer; 
+    transition: background .5s;  
+  }
   .main .container {
     margin: 80px auto;
   }
@@ -98,23 +103,28 @@ html, body {
   }
   
   .jumbotron {
-    background: url(/img/escobar1.jpg) center center;
+    background: url(/img/textura2.jpg) center center;
     background-size: cover;
     height: 600px; 
   }
-  
+  .jumbotron-login {
+    background: url(/img/textura2.jpg) center center;
+    background-size: cover;
+    height: 1000px; 
+    position: relative;
+  }
   .jumbotron .container {
     position: relative;
     top: 220px;
   }
   
   .jumbotron h2 {
-    color: #fff;
+    color: black;
     text-align: right; 
   }
   
-  .jumbotron p {
-    color: #fff; 
+  .jumbotron h3 {
+    color: black;
     text-align: right; 
   }
   
